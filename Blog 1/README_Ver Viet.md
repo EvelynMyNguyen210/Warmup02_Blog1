@@ -91,7 +91,7 @@ Ví dụ:
 
 
  <p align="center">
-   <img src="https://github.com/EvelynMyNguyen210/Warmup02_Blog1/blob/main/Collection/part2_healthcare.png/3_1_social_viral.png" style="margin: 0 auto; display: block;"><br/>
+   <img src="https://github.com/EvelynMyNguyen210/Warmup02_Blog1/blob/main/Collection/3_1_social_viral.png" style="margin: 0 auto; display: block;"><br/>
    <em>Hình 3.1. Bài hát đột nhiên lan truyền mạnh khiến lượt nhắc đến tăng vọt; nguồn:  <a href="https://www.talkwalker.com/blog/trend-analysis-life-of-a-showgirl">Talkwalker Social Listening</a> </em>
  </p>
 
