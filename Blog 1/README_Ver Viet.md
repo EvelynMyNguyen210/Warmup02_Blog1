@@ -268,7 +268,11 @@ Chandola, V., Banerjee, A., & Kumar, V. (2009). Anomaly detection: A survey. ACM
 
 Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep learning. MIT Press.
 
+Chandola, Banerjee, and Kumar (2009). Anomaly Detection: A Survey
 
+IBM. (n.d.). What is anomaly detection? IBM. https://www.ibm.com/think/topics/anomaly-detection
+
+Nguyễn Minh Hải. (2025). Anomaly Detection là gì? Xu hướng phát triển của phát hiện bất thường. VNPT AI. https://vnptai.io/vi/blog/detail/anomaly-detection-la-gi
 
 
 
