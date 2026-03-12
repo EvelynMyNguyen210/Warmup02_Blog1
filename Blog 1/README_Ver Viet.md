@@ -126,7 +126,9 @@ Ví dụ, nếu một mô hình dự đoán tất cả giao dịch đều là no
 
  <p align="center">
    <img src="https://github.com/EvelynMyNguyen210/Warmup02_Blog1/blob/main/Collection/Imbalanced Data.png" style="margin: 0 auto; display: block;"><br/>
-     <em>Hình 5.1. Dữ liệu mất cân bằng </em>
+     <em>Hình 5.1. Dữ liệu mất cân bằng; nguồn: <a href="https://deepgram.com/ai-glossary/imbalanced-data?utm_source=chatgpt.com
+">DeepGram</a> </em>
+ </p></em>
  </p>
  
 ## 5.2. Sự thay đổi của dữ liệu theo thời gian (Evolving Patterns)
@@ -146,7 +148,9 @@ Vì vậy, các hệ thống anomaly detection trong thực tế thường cần
 
  <p align="center">
    <img src="https://github.com/EvelynMyNguyen210/Warmup02_Blog1/blob/main/Collection/Evolving Patternts.png" style="margin: 0 auto; display: block;"><br/>
-     <em>Hình 5.2. Sự thay đổi của dữ liệu theo thời gian </em>
+     <em>Hình 5.2. Sự thay đổi của dữ liệu theo thời gian; nguồn: <a href="https://www.evidentlyai.com/ml-in-production/data-drift?utm_source=chatgpt.com
+">EVIDENTLY AI</a> </em>
+ </p></em>
  </p>
  
 ## 5.3. Dữ liệu có nhiều chiều (High-Dimensional Data)
@@ -172,7 +176,9 @@ Ngoài ra, dữ liệu nhiều chiều cũng làm tăng độ phức tạp tính
 
  <p align="center">
    <img src="https://github.com/EvelynMyNguyen210/Warmup02_Blog1/blob/main/Collection/High-Dimensional Data.png" style="margin: 0 auto; display: block;"><br/>
-     <em>Hình 5.3. Dữ liệu có nhiều chiều</em>
+     <em>Hình 5.3. Dữ liệu có nhiều chiều</em>; nguồn: <a href="https://builtin.com/data-science/curse-dimensionality?utm_source=chatgpt.com
+">BuiltIn</a> </em>
+ </p></em>
  </p>
 
 ## 5.4. Yêu cầu phát hiện theo thời gian thực (Real-Time Detection)
@@ -186,7 +192,8 @@ Do đó, các hệ thống anomaly detection phải cân bằng giữa **độ c
 
  <p align="center">
    <img src="https://github.com/EvelynMyNguyen210/Warmup02_Blog1/blob/main/Collection/Real-Time Detection.png" style="margin: 0 auto; display: block;"><br/>
-     <em>Hình 5.4. Yêu cầu phát hiện theo thời gian thực</em>
+     <em>Hình 5.4. Yêu cầu phát hiện theo thời gian thực</em>; nguồn: <a href="https://aws.amazon.com/blogs/machine-learning/simplify-and-automate-anomaly-detection-in-streaming-data-with-amazon-lookout-for-metrics/?utm_source=chatgpt.com">AWS</a> </em>
+ </p></em>
  </p>
 
 # 6. Kết luận
