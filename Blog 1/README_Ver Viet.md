@@ -1,4 +1,4 @@
-<img width="210" height="29" alt="image" src="https://github.com/user-attachments/assets/991240b4-72ec-4055-b409-77a6d8755462" />
+<img width="792" height="46" alt="image" src="https://github.com/user-attachments/assets/87696ad9-80b0-4168-9e40-fdbb3f2b9427" /><img width="210" height="29" alt="image" src="https://github.com/user-attachments/assets/991240b4-72ec-4055-b409-77a6d8755462" />
 
 # 1. Anomaly Detection là gì? – Khi những "kẻ lạc loài" lên tiếng
 
@@ -41,7 +41,7 @@ Trong lĩnh vực an ninh mạng, việc phát hiện các truy cập khả nghi
 
 <p align="center">
   <img src=https://github.com/EvelynMyNguyen210/Warmup02_Blog1/blob/main/Collection/part2_cybersecurity.png style="margin: 0 auto; display: block;"><br/>
-  <em>Hình 2.1. Anomalies trong an ninh mạng</em>
+  <em>Hình 2.1. Anomalies trong an ninh mạng (Nguồn: https://www.wiz.io/academy/detection-and-response/anomaly-detection)</em>
 </p>
 
 ### 2.2.3. Industrial monitoring:
@@ -55,7 +55,7 @@ Trong hệ thống máy công nghiệp, các thiết bị có thể đọc ghi c
 
 <p align="center">
   <img src=https://github.com/EvelynMyNguyen210/Warmup02_Blog1/blob/main/Collection/part2_industrial.png style="margin: 0 auto; display: block;"><br/>
-  <em>Hình 2.2. Anomaly trong dữ liệu sensor</em>
+  <em>Hình 2.2. Anomaly trong dữ liệu sensor (Nguồn: https://www.themoonlight.io/de/review/an-attention-based-deep-generative-model-for-anomaly-detection-in-industrial-control-systems)</em>
 </p>
 
 ### 2.2.4. Healthcare:
@@ -66,7 +66,7 @@ Trong lĩnh vực y tế, các dữ liệu về bệnh nhân rất quan trọng 
 
 <p align="center">
   <img src=https://github.com/EvelynMyNguyen210/Warmup02_Blog1/blob/main/Collection/part2_healthcare.png style="margin: 0 auto; display: block;"><br/>
-  <em>Hình 2.3. Anomaly trong dữ liệu y tế</em>
+  <em>Hình 2.3. Anomaly trong dữ liệu y tế (Nguồn: https://unit8.com/resources/anomaly-detection-in-healthcare-data-with-darts/) </em>
 </p>
 
 # 3. Phân loại Anomaly
