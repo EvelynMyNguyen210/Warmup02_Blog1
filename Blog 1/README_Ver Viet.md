@@ -241,11 +241,11 @@ Học máy truyền thống chạy nhanh hơn, tốn ít RAM/CPU hơn và cần 
 
 ### **4.3.4. Dữ liệu không tuân theo phân phối chuẩn**
 
-Nếu dữ liệu của bạn có hình dạng kì quái, đa phương thức (multi-modal) hoặc không có quy luật thống kê rõ ràng. Thuật toán dựa trên khoảng cách/mật độ như K-Nearest Neighbors (KNN) hoặc DBSCAN sẽ dựa vào khoảng cách vật lí giữa các điểm để xác định sự bất thường thay vì dựa vào các giả định toán học khắt khe.
+Nếu dữ liệu của bạn có hình dạng kì quái, đa phương thức (multimodal) hoặc không có quy luật thống kê rõ ràng. Thuật toán dựa trên khoảng cách/mật độ như K-Nearest Neighbors (KNN) hoặc DBSCAN sẽ dựa vào khoảng cách vật lí giữa các điểm để xác định sự bất thường thay vì dựa vào các giả định toán học khắt khe.
 
 ## **4.4. Học sâu (Deep Learning)**
 
-Các phương pháp kể trên đều đã và đang được sử dụng rộng rãi. Tuy nhiên, khi gặp những bộ dữ liệu có số chiều lớn (high dimension) hoặc có những mối liên hệ rắc rối, các phương pháp truyền thống đều tỏ ra kém hiệu quả. Các mô hình học sâu với khả năng học được các quy luật phức tạp, đang dần trở thành các công cục đắc lực để khắc phục những điểm yếu đó.
+Các phương pháp kể trên đều đã và đang được sử dụng rộng rãi. Tuy nhiên, khi gặp những bộ dữ liệu có số chiều lớn (high dimension) hoặc có những mối liên hệ rắc rối, các phương pháp truyền thống đều tỏ ra kém hiệu quả. Các mô hình học sâu với khả năng học được các quy luật phức tạp, đang dần trở thành các công cụ đắc lực để khắc phục những điểm yếu đó.
 
 Sau đây là ba cách tiếp cận mô hình học sâu.
 
@@ -401,6 +401,7 @@ Hành trình giải mã dữ liệu không chỉ là đi tìm sự tương đồ
 Dù bạn sử dụng các phương pháp thống kê truyền thống hay các kiến trúc máy học hiện đại, mục tiêu cuối cùng vẫn là biến những "điểm đen" bất thường thành những quyết định chính xác. Nhưng làm thế nào để mang những lý thuyết này vào thế giới thực đầy biến động của ngành tài chính? Ở bài viết tiếp theo (**Blog 2**), chúng ta sẽ cùng "thực chiến" với các kỹ thuật máy học chuyên biệt để xây dựng hệ thống phát hiện gian lận (Fraud Detection) cho ngân hàng. Đừng bỏ lỡ nhé!
 
 # Tài liệu tham khảo
+
 Aggarwal, C. C. (2017). *Outlier analysis (2nd ed.)*. Springer.
 
 Chandola, V., Banerjee, A., & Kumar, V. (2009). *Anomaly detection: A survey*. ACM Computing Surveys, 41(3), 1–58. https://doi.org/10.1145/1541880.1541882

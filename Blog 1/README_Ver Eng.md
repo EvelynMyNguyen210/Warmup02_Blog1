@@ -47,3 +47,169 @@ In the healthcare sector, patient data plays a crucial role in monitoring health
   <img src=https://github.com/EvelynMyNguyen210/Warmup02_Blog1/blob/main/Collection/part2_healthcare.png style="margin: 0 auto; display: block;"><br/>
   <em>Figure 2.3. Anomaly in medical data; source: <a href="https://unit8.com/resources/anomaly-detection-in-healthcare-data-with-darts/">Unit8</a></em>
 </p>
+
+# 4. Common methods for detecting abnormalities
+
+The rapid increase in data from various sources has made anomaly detection increasingly essential for identifying unusual observations that may signal system errors, security breaches, or fraud. Currently, there are many anomaly detection methods, ranging from simple to complex, and from traditional to modern. Each method has its own advantages and disadvantages. Depending on the type of data and the purpose, businesses and organizations will choose the most suitable method.
+
+The following sections will introduce methods such as data visualization, statistical testing, traditional machine learning, modern deep learning, and methods combining both traditional and deep learning algorithms.
+
+## **4.1. Data Visualization**
+
+Using visual representations for anomaly detection is a key method when there is a need to quickly identify unusual data patterns, explain why a data point is considered anomalous, or monitor complex systems in real time.
+
+Here are some specific times and situations where you should use visual aids.
+
+### **4.1.1. Data Exploration Analysis (EDA) Phase**
+
+Before applying machine learning algorithms, visual representations help you better understand the state of the data.
+
+- **Identifying Outliers:** Use Box Plots to see points outside the standard range of values ​​or Scatter Plots to detect data points that are distinctly separate from the main data clusters.
+- **Identifying trends and cycles:** Line charts are extremely useful for detecting sudden changes or disruptions in time-series data.
+
+### **4.1.2. Model Validation and Interpretation**
+
+When an algorithm (like Isolation Forest) labels a point as an anomaly, visual representations help humans verify that finding.
+
+- **Explaining "Why":** Tools like Power BI Anomaly Detection not only point out anomalies but also provide visual explanations of the influencing factors.
+- **Distinguishing True Anomalies from Noise:** Images help professionals differentiate between genuine system errors and harmless, random incidents.
+
+### **4.1.3. Real-Time System Monitoring**
+
+In cybersecurity or manufacturing, visual representations are the first line of defense.
+
+- **Intrusion & Fraud Detection:** The dashboard displays network traffic in a graph-based format, allowing security engineers to immediately see suspicious connections highlighted in red.
+- **Industrial Equipment Monitoring:** In manufacturing, charts showing the discrepancies between actual and predicted values ​​help prevent machine failures before they occur.
+
+### **4.1.4. Communication for Non-Technical Audiences**
+
+Visual representations are the best way to present complex findings to stakeholders.
+
+- **Business Reports:** Charts help managers clearly see unusual sales declines without having to read through thousands of lines of spreadsheets.
+- **Making strategic decisions:** Visualizing potential threats helps organizations develop more effective strategic responses.
+
+## **4.2. Statistical Tests**
+
+When a solid mathematical foundation is needed to identify anomalies, and when machine learning methods become too complex or unnecessary, you may consider using statistical testing.
+
+Below are specific times when statistical testing should be prioritized.
+
+### **4.2.1. Data follows a defined distribution**
+
+If you know your data follows a specific distribution (such as a Normal/Gaussian distribution), statistical testing is the most powerful and accurate tool.
+
+- **Univariate data:** Use the Z-Score to identify points that are far from the mean (usually > 3 standard deviations).
+- **Find outliers in normally distributed data:**	Z-test or T-test
+- **Compare the differences between the two datasets (before and after):**	Mann-Whitney U Test hoặc Kolmogorov-Smirnov Test
+- **Check for data dispersion/volatility:**	F-test
+- **Outlier Detection:** Use specialized tests such as Grubbs' Test or Dixon's Q-test to find a single outlier in a small dataset.
+
+### **4.2.2. Requirements for Transparency and Explainability**
+
+Unlike AI's "black box" models, statistical testing provides clear reasoning.
+
+- **Logical explanation:** You can easily explain to stakeholders that "This point is unusual because it falls outside the 99% confidence interval of the historical distribution."
+- **Regulatory Compliance:** In auditing or security, having a clear mathematical formula to demonstrate an anomaly is often preferred over complex algorithms.
+
+## **4.3. Traditional Machine Learning**
+
+When your data starts to become more complex than simple statistical distributions, but still hasn't reached the level of massive size or unstructured data (like video/audio) that would require Deep Learning, then you'll need traditional Machine Learning algorithms.
+
+Here are some specific scenarios for application.
+
+### **4.3.1. High-Dimensional Data**
+
+When you have dozens or hundreds of interacting features, univariate statistical tests will fail. Algorithms like Isolation Forest or One-Class SVM are extremely effective at finding anomalies hidden deep within the combination of multiple variables that are invisible to the naked eye on a graph.
+
+### **4.3.2. Unsupervised Learning (No Labeled Data)**
+
+One of the most common situations in practice today is having a lot of data but not knowing which is "error" and which is "clean." Unsupervised learning algorithms like Local Outlier Factor (LOF) will automatically learn the density of the data and flag points in sparse areas as anomalies.
+
+### **4.3.3. The need for a balance between performance and resources**
+
+Deep learning methods are very powerful but extremely demanding on hardware and data.
+Traditional machine learning runs faster, uses less RAM/CPU, and requires less training data to achieve acceptable accuracy in tasks such as credit card fraud detection or IoT device malfunction detection.
+
+### **4.3.4. Data that does not follow a normal distribution**
+
+If your data has odd shapes, is multimodal, or lacks clear statistical patterns, distance/density-based algorithms like K-Nearest Neighbors (KNN) or DBSCAN will rely on the physical distance between points to identify anomalies instead of strict mathematical assumptions.
+
+## **4.4. Deep Learning**
+
+The methods mentioned above have been widely used. However, when dealing with high-dimensional datasets or those with complex relationships, traditional methods prove ineffective. Deep learning models, capable of learning complex rules, are gradually becoming powerful tools to overcome these weaknesses.
+
+Here are three approaches to deep learning modeling.
+
+### **4.4.1. Reconstruction-based Approach**
+
+<p align="center">
+  <img src=https://github.com/EvelynMyNguyen210/Warmup02_Blog1/blob/main/Collection/4_1_reconstruction_approach.png style="margin: 0 auto; display: block;"><br/>
+Figure 4.1. Reconstruction-based Approach.
+</p>
+
+This approach works by training a model to learn the distribution of normal (non-anomalous) data. After training, the model is able to reconstruct the input data. The difference between the original data and the reconstructed data is called the reconstruction error. A high error is an indicator that the data is anomalous.
+
+In recent years, common approaches to modeling have included generative antagonist models (GANs), autoencoder models, and diffusion models.
+
+### **4.4.2. Prediction-Based Approach**
+
+<p align="center">
+  <img src=https://github.com/EvelynMyNguyen210/Warmup02_Blog1/blob/main/Collection/4_2_prediction_approach.png style="margin: 0 auto; display: block;"><br/>
+Figure 4.2. Prediction-Based Approach.
+</p>
+
+Predictive anomaly detection methods work by forecasting future values ​​or estimating missing attributes, then comparing these predictions to the actual observed values. When significant deviations occur, it indicates anomalies, as the data deviates from learned standard patterns.
+
+These methods are highly flexible and can be applied to a wide variety of data types, leveraging relationships between variables or correlations over time to detect anomalies. By learning structures within the data, whether based on time dependence or more general interactions between variables, these methods can effectively predict expected outcomes. This makes prediction-based methods highly adaptable, capable of working in diverse contexts, encompassing a wide range of data types.
+
+In this section, we will explore three main methods for predictive anomaly detection: Recurrent Neural Networks (RNNs), Attention mechanisms, and Graph Neural Networks (GNNs).
+
+### **4.4.3. Hybrid Approach**
+
+<p align="center">
+  <img src=https://github.com/EvelynMyNguyen210/Warmup02_Blog1/blob/main/Collection/4_3_hybrid_approach.png style="margin: 0 auto; display: block;"><br/>
+Figure 4.3. Hybrid Approach.
+</p>
+
+Methods based on reconstruction and prediction offer distinct but complementary approaches to identifying anomalies.
+
+Reconstruction-based approaches focus on learning the underlying distribution of normal data. After training, the model attempts to reproduce the input data. This approach is particularly effective in cases where a thorough understanding of the data structure or distribution is required, such as in image-based anomaly detection or other multidimensional datasets.
+
+Conversely, prediction-based approaches focus on forecasting specific attributes or missing values ​​from the data, rather than reproducing the entire input. Predictive methods are often better suited to feature-rich datasets, where predicting specific variables can help identify anomalous patterns.
+
+Although both methods differ in their approach to data processing, they can complement each other very well. In many cases, combining both allows for better anomaly detection. Reconstruction models capture the overall structure and information of the data, while predictive models focus on detecting deviations in specific variables or features. This combination can provide a more comprehensive solution for identifying anomalies in complex datasets across various domains.
+
+Specifically, to detect anomalies, you can use results from both reconstruction models and prediction models; and you can also use the results obtained by running the data sequentially through the prediction model and then the reconstruction model to enhance the results from the previous prediction model.
+
+## **4.5. Combining Traditional Machine Learning and Deep Learning**
+
+<p align="center">
+  <img src=https://github.com/EvelynMyNguyen210/Warmup02_Blog1/blob/main/Collection/4_4_ml_and_dl.png style="margin: 0 auto; display: block;"><br/>
+Figure 4.4. Combining Traditional Machine Learning and Deep Learning
+</p>
+
+Traditional and deep learning methods each offer distinct advantages. Traditional methods, such as clustering and support vector machines (SVMs), are generally simpler, easier to understand, and more computationally efficient. These methods excel at providing transparent decision-making processes, making them suitable for applications where model interpretability is critical. Deep learning methods, on the other hand, with their ability to model complex, multidimensional data distributions, offer enhanced detection accuracy and adaptability, particularly for large datasets and unstructured data such as images and sequences.
+
+The integration of traditional and deep learning methods aims to leverage the explanatory power and simplicity of traditional methods with the robustness and flexibility of deep learning techniques. By combining these approaches, researchers seek to create hybrid models that maintain accuracy while providing deep insights into underlying decision-making processes, improving both the model's detectability and transparency.
+
+In this approach, we typically use deep learning models to extract complex, multidimensional features; then, using algorithms such as clustering or support vector machines, we can classify and detect anomalies.
+
+# References
+
+Aggarwal, C. C. (2017). *Outlier analysis (2nd ed.)*. Springer.
+
+Chandola, V., Banerjee, A., & Kumar, V. (2009). *Anomaly detection: A survey*. ACM Computing Surveys, 41(3), 1–58. https://doi.org/10.1145/1541880.1541882
+
+Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep learning*. MIT Press.
+
+Chandola, Banerjee, and Kumar (2009). *Anomaly Detection: A Survey*
+
+Huang, H., Wang, P., et. al. (2025). *Deep Learning Advancements in Anomaly Detection: A Comprehensive Survey*. arXiv. <https://arxiv.org/html/2503.13195v1>
+
+IBM. (n.d.). What is anomaly detection? IBM. https://www.ibm.com/think/topics/anomaly-detection
+
+Nguyễn Minh Hải. (2025). *Anomaly Detection là gì? Xu hướng phát triển của phát hiện bất thường*. VNPT AI. https://vnptai.io/vi/blog/detail/anomaly-detection-la-gi
+
+Song, X., Wu, M., Jermaine, C., & Ranka, S. (2007). Conditional anomaly detection. IEEE Transactions on Knowledge and Data Engineering, 19(5), 631–645. https://doi.org/10.1109/TKDE.2007.1018
+
+Goldberger, A. L., Amaral, L. A. N., Glass, L., Hausdorff, J. M., Ivanov, P. C., Mark, R. G., Mietus, J. E., Moody, G. B.,  Peng, C.-K., & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation, 101(23), e215–e220. https://doi.org/10.1161/01.CIR.101.23.e215
