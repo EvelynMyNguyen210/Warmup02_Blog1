@@ -241,7 +241,7 @@ Học máy truyền thống chạy nhanh hơn, tốn ít RAM/CPU hơn và cần 
 
 ### **4.3.4. Dữ liệu không tuân theo phân phối chuẩn**
 
-Nếu dữ liệu của bạn có hình dạng kì quái, đa đỉnh (multi-modal) hoặc không có quy luật thống kê rõ ràng. Thuật toán dựa trên khoảng cách/mật độ như K-Nearest Neighbors (KNN) hoặc DBSCAN sẽ dựa vào khoảng cách vật lí giữa các điểm để xác định sự bất thường thay vì dựa vào các giả định toán học khắt khe.
+Nếu dữ liệu của bạn có hình dạng kì quái, đa phương thức (multi-modal) hoặc không có quy luật thống kê rõ ràng. Thuật toán dựa trên khoảng cách/mật độ như K-Nearest Neighbors (KNN) hoặc DBSCAN sẽ dựa vào khoảng cách vật lí giữa các điểm để xác định sự bất thường thay vì dựa vào các giả định toán học khắt khe.
 
 ## **4.4. Học sâu (Deep Learning)**
 
